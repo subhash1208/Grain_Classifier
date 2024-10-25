@@ -1,9 +1,11 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
+
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
 *.py text
 *.txt text
 *.pkl text
-*.'h5 filter=lfs diff=lfs merge=lfs -text
-“*.h5” filter=lfs diff=lfs merge=lfs -text
+
+# Track .h5 files with Git LFS
+*.h5 filter=lfs diff=lfs merge=lfs -text
