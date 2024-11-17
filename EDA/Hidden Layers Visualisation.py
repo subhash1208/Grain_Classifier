@@ -22,9 +22,9 @@ def visualise(model, image):
 
 
 # testing the funtion
-model_path = '/Users/savyakshat/Downloads/weights_30_30_.h5'
+model_path = 'D:\Projects\Grain_Classifier\segmentation_data\weights_30_30_.h5'
 model = load_model(model_path)
-image_path = '/Users/savyakshat/Downloads/test.jpg'
+image_path = 'D:\Projects\Grain_Classifier\test3.jpg'
 image = cv2.imread(image_path)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
 image = cv2.resize(image, (30, 30))

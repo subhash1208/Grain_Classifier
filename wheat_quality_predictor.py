@@ -1,5 +1,6 @@
 import tensorflow as tf
-tf.logging.set_verbosity(tf.logging.ERROR)
+logger = tf.get_logger()
+logger.setLevel('INFO')  # Set the logging level to INFO
 import sys
 from utility_functions import display_mask, get_boundry_img_matrix
 import numpy as np, keras, cv2
